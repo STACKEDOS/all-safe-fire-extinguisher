@@ -804,12 +804,11 @@ header nav a.nav-cta:hover { opacity: 0.85; color: var(--white); }
 .logo-item .logo-text { font-size: 17px; font-weight: 700; color: #bbb; white-space: nowrap; transition: color 0.25s ease; user-select: none; }
 .logo-dot { width: 5px; height: 5px; border-radius: 50%; background: #ddd; flex-shrink: 0; }
 .marquee-wrapper:hover .logo-item .logo-text { color: #444; }
-.trusted-
 
 /* ── Why All Safe Section ─────────────────────────────────── */
 .section-lead { font-size: 1.15rem; line-height: 1.7; color: rgba(255,255,255,.85); max-width: 680px; margin-bottom: 2.5rem; }
 .why-block { border-left: 3px solid var(--red); padding-left: 1.5rem; margin-bottom: 2.5rem; }
-.why-block h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: .75rem; }
+.why-block h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: .75rem; color: #fff; }
 .why-block p { color: rgba(255,255,255,.8); line-height: 1.7; margin-bottom: .75rem; }
 .why-checklist { list-style: none; padding: 0; margin: 1rem 0; display: flex; flex-direction: column; gap: .6rem; }
 .why-checklist li { padding-left: 1.5rem; position: relative; color: rgba(255,255,255,.8); line-height: 1.6; font-size: .95rem; }
@@ -818,7 +817,7 @@ header nav a.nav-cta:hover { opacity: 0.85; color: var(--white); }
 .why-close { font-style: italic; color: rgba(255,255,255,.7); font-size: .95rem; margin-top: 1rem; }
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
 .why-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: .5rem; padding: 1.5rem; }
-.why-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .6rem; }
+.why-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .6rem; color: #fff; }
 .why-card p { color: rgba(255,255,255,.75); font-size: .9rem; line-height: 1.65; margin: 0; }
 .why-verdict { background: rgba(204,34,34,.12); border-left: 3px solid var(--red); padding: 1rem 1.25rem; border-radius: 0 .25rem .25rem 0; color: rgba(255,255,255,.85); font-size: .95rem; line-height: 1.6; margin: 2rem 0 1.5rem; }
 @media (max-width: 768px) {
@@ -864,4 +863,4 @@ header nav a.nav-cta:hover { opacity: 0.85; color: var(--white); }
 .section-dark { background: var(--dark, #222222); color: #fff; }
 .section-dark h2, .section-dark h3 { color: #fff; }
 .section-dark p { color: rgba(255,255,255,.82); }
-.why-allsafe-section { background: #222222; }
+.why-allsafe-section { background: #222222; color: #fff; }
