@@ -635,3 +635,67 @@ header nav a.nav-cta:hover { opacity: 0.85; color: var(--white); }
   font-family: Arial, sans-serif;
 }
 .industry-cta-link:hover { text-decoration: underline; }
+
+/* =============================================
+   SITEWIDE ADDITIONS — Full Site Rewrite Pass
+   ============================================= */
+
+/* Jump nav pills */
+.services-jump-nav { display:flex; flex-wrap:wrap; gap:.5rem; padding:1.5rem 0; }
+.jump-pill { background:var(--red); color:white; padding:.4rem 1rem; border-radius:2rem; text-decoration:none; font-size:.85rem; font-weight:600; transition:opacity .2s; }
+.jump-pill:hover { opacity:.85; }
+
+/* County cards */
+.county-card { background:var(--dark); border:1px solid rgba(255,255,255,.1); border-radius:.5rem; padding:2rem; margin-bottom:2rem; }
+.county-card-header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem; }
+.county-card h2 { margin:0; font-size:1.5rem; }
+.drive-badge { background:rgba(204,34,34,.15); color:var(--red); border:1px solid rgba(204,34,34,.3); padding:.25rem .75rem; border-radius:2rem; font-size:.8rem; font-weight:600; white-space:nowrap; }
+.county-card-cities { display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1rem; }
+.city-chip { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); color:rgba(255,255,255,.85); padding:.2rem .6rem; border-radius:2rem; font-size:.8rem; }
+.county-note { color:rgba(255,255,255,.7); font-size:.9rem; margin:0; }
+
+/* Legacy timeline */
+.legacy-timeline { display:flex; flex-wrap:wrap; gap:0; margin:2rem 0; border-top:2px solid var(--red); padding-top:1.5rem; }
+.legacy-marker { flex:1; min-width:140px; padding-right:1.5rem; }
+.legacy-year { display:block; font-size:1.3rem; font-weight:800; color:var(--red); }
+.legacy-label { display:block; font-size:.85rem; color:rgba(255,255,255,.75); margin-top:.25rem; line-height:1.4; }
+
+/* Contact trust panel */
+.contact-trust-panel { background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); border-radius:.5rem; padding:2rem; }
+.contact-trust-panel h3 { font-size:1rem; text-transform:uppercase; letter-spacing:.05em; color:var(--red); margin-top:0; }
+.contact-trust-item { display:flex; gap:.75rem; align-items:flex-start; margin-bottom:1rem; font-size:.9rem; }
+.contact-trust-item strong { color:white; }
+
+/* Contact sidebar */
+.contact-sidebar { display:flex; flex-direction:column; }
+
+/* What happens next */
+.next-steps { display:flex; flex-direction:column; gap:1rem; margin:1rem 0; }
+.next-step { display:flex; gap:1rem; align-items:flex-start; }
+.step-num { background:var(--red); color:white; width:2rem; height:2rem; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0; font-size:.9rem; }
+
+/* FAQ group labels */
+.faq-group-label { font-size:.8rem; text-transform:uppercase; letter-spacing:.1em; color:var(--red); margin:2rem 0 1rem; padding-bottom:.5rem; border-bottom:1px solid rgba(255,255,255,.1); }
+
+/* FAQ accordion */
+.faq-item h3 { position:relative; padding-right:2rem; }
+.faq-item h3::after { content:'\＋'; position:absolute; right:0; top:50%; transform:translateY(-50%); font-size:1.2rem; }
+.faq-item h3.faq-open::after { content:'\－'; }
+
+/* Light section */
+.section-light { background:#F5F5F5; color:var(--dark); }
+.section-light h2, .section-light h3, .section-light p { color:var(--dark); }
+.section-light .client-logo { color:var(--dark); border-color:rgba(0,0,0,.15); }
+.section-light .section-sub { color:rgba(0,0,0,.7); }
+
+/* Contact layout with sidebar */
+@media (min-width:900px) {
+  .contact-layout { display:grid; grid-template-columns:1fr 360px; gap:3rem; align-items:start; }
+}
+
+@media (max-width:768px) {
+  .county-card-header { flex-direction:column; align-items:flex-start; }
+  .legacy-timeline { flex-direction:column; }
+  .legacy-marker { padding-right:0; padding-bottom:1.5rem; }
+  .contact-sidebar { margin-top:2rem; }
+}

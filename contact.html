@@ -51,34 +51,15 @@
   <section class="page-hero">
     <div class="container">
       <h1>Contact All Safe Fire Extinguisher Co.</h1>
-      <p class="hero-sub">We're an email-first company. Send us a message and we'll follow up to learn about your needs. For immediate assistance, call us directly.</p>
+      <p class="hero-sub">Ready to get compliant? Tell us about your property and we'll route your request to the right specialist.</p>
     </div>
   </section>
   <section class="section">
     <div class="container contact-layout">
-      <div class="contact-info">
-        <h2>Get in Touch</h2>
-        <p>We qualify all new clients by phone or email before scheduling &mdash; no automated quotes. Reach out and we'll be in touch.</p>
-        <div class="contact-method">
-          <h3>Email (Preferred)</h3>
-          <a href="mailto:allsafefireextco@gmail.com" class="contact-link">allsafefireextco@gmail.com</a>
-        </div>
-        <div class="contact-method">
-          <h3>Phone</h3>
-          <a href="tel:9516767366" class="contact-link contact-phone">(951) 676-7366</a>
-        </div>
-        <div class="contact-method">
-          <h3>Hours</h3>
-          <p>Monday &ndash; Friday<br>7:00 AM &ndash; 5:00 PM</p>
-        </div>
-        <div class="contact-method">
-          <h3>Location</h3>
-          <p>Temecula, CA<br>Serving Ventura to San Diego &mdash; 7 Counties</p>
-        </div>
-      </div>
+
       <div class="contact-form-wrap">
-        <h2>Send Us a Message</h2>
-        <p>Fill out the form below and we'll be in touch to learn about your needs. No automated quotes &mdash; we follow up personally.</p>
+        <h2>Tell Us What You Need Serviced</h2>
+        <p>Fill out the form below and a specialist will be in touch. No automated quotes &mdash; we follow up personally within 1 business day.</p>
         <form class="contact-form" action="mailto:allsafefireextco@gmail.com" method="POST" enctype="text/plain">
           <div class="form-group">
             <label for="name">Name</label>
@@ -93,17 +74,102 @@
             <input type="email" id="email" name="email" placeholder="your@email.com" required>
           </div>
           <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service&hellip;</option>
+              <option value="annual-inspection">Annual Inspection</option>
+              <option value="recharging">Recharging</option>
+              <option value="hydrostatic">Hydrostatic Testing</option>
+              <option value="six-year">6-Year Maintenance</option>
+              <option value="new-installation">New Installation</option>
+              <option value="compliance-docs">Compliance Documentation</option>
+              <option value="not-sure">Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="property-type">Property Type</label>
+            <select id="property-type" name="property_type">
+              <option value="">Select property type&hellip;</option>
+              <option value="apartment">Apartment Building</option>
+              <option value="commercial-office">Commercial Office</option>
+              <option value="retail">Retail</option>
+              <option value="industrial">Industrial</option>
+              <option value="school">School</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="extinguisher-count">Approximate Number of Extinguishers</label>
+            <select id="extinguisher-count" name="extinguisher_count">
+              <option value="">Select a range&hellip;</option>
+              <option value="1-10">1&ndash;10</option>
+              <option value="11-50">11&ndash;50</option>
+              <option value="51-200">51&ndash;200</option>
+              <option value="200+">200+</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label for="county">County / City</label>
             <input type="text" id="county" name="county" placeholder="e.g. Riverside County, San Diego, Ventura">
           </div>
           <div class="form-group">
             <label for="message">Brief Description of Your Needs</label>
-            <textarea id="message" name="message" rows="5" placeholder="Describe your property or facility and what you need (inspection, recharging, new installation, etc.)"></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your property or facility and what you need."></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-note">We'll be in touch. For immediate assistance, call <a href="tel:9516767366">(951) 676-7366</a>.</p>
+          <p class="form-note">For immediate assistance, call <a href="tel:9516767366">(951) 676-7366</a>.</p>
         </form>
       </div>
+
+      <div class="contact-sidebar">
+        <div class="contact-trust-panel">
+          <h3>Why All Safe</h3>
+          <div class="contact-trust-item">
+            <strong>Licensed:</strong> <span>Type B, C, D &amp; F (CA OSFM)</span>
+          </div>
+          <div class="contact-trust-item">
+            <strong>Experience:</strong> <span>45 Years serving Southern California</span>
+          </div>
+          <div class="contact-trust-item">
+            <strong>Coverage:</strong> <span>7 Counties</span>
+          </div>
+          <div class="contact-trust-item">
+            <strong>Scale:</strong> <span>1,500+ client accounts per year</span>
+          </div>
+          <div class="contact-trust-item">
+            <strong>Response:</strong> <span>Within 1 business day</span>
+          </div>
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,.1);margin:1.25rem 0;">
+          <div class="contact-trust-item">
+            <strong>Email:</strong> <span><a href="mailto:allsafefireextco@gmail.com">allsafefireextco@gmail.com</a></span>
+          </div>
+          <div class="contact-trust-item">
+            <strong>Phone:</strong> <span><a href="tel:9516767366">(951) 676-7366</a></span>
+          </div>
+          <div class="contact-trust-item">
+            <strong>Hours:</strong> <span>Mon &ndash; Fri, 7:00 AM &ndash; 5:00 PM</span>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;">
+          <h3 style="font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--red);margin-bottom:1rem;">What Happens After You Submit</h3>
+          <div class="next-steps">
+            <div class="next-step">
+              <div class="step-num">1</div>
+              <p style="margin:0;">A specialist reviews your request &mdash; usually within 1 business day</p>
+            </div>
+            <div class="next-step">
+              <div class="step-num">2</div>
+              <p style="margin:0;">We confirm your service needs and coverage area</p>
+            </div>
+            <div class="next-step">
+              <div class="step-num">3</div>
+              <p style="margin:0;">We schedule your service visit or compliance walkthrough</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 </main>
