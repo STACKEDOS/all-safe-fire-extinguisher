@@ -34,7 +34,7 @@
       <span class="tagline">Temecula, CA &mdash; Est. 1981</span>
     </div>
     <nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.nextElementSibling.classList.toggle('nav-open')">&#9776;</button>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html" class="active">Services</a></li>
@@ -184,5 +184,10 @@
     <p class="footer-copy">&copy; 2026 All Safe Fire Extinguisher Co., Inc. &mdash; Temecula, CA. Lic. Type B, C, D &amp; F. All rights reserved.</p>
   </div>
 </footer>
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', function() {
+    this.closest('nav').classList.toggle('nav-open');
+  });
+</script>
 </body>
 </html>

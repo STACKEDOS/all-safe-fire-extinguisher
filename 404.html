@@ -13,15 +13,17 @@
 <header>
   <div class="container header-inner">
     <a href="index.html" class="logo">🔴 All Safe Fire Extinguisher Co.</a>
-    <nav class="main-nav">
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="this.parentElement.classList.toggle('nav-open')">&#9776;</button>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="who-we-serve.html">Who We Serve</a>
-      <a href="service-area.html">Service Area</a>
-      <a href="about.html">About</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
+    <nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="who-we-serve.html">Who We Serve</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="service-area.html">Service Area</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
     </nav>
     <a href="tel:9516767366" class="btn btn-header">📞 (951) 676-7366</a>
   </div>
@@ -73,5 +75,10 @@
   </div>
 </footer>
 
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', function() {
+    this.closest('nav').classList.toggle('nav-open');
+  });
+</script>
 </body>
 </html>
