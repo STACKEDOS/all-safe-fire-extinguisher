@@ -101,6 +101,7 @@ header {
   text-align: center;
 }
 .trust-bar-inner .trust-num::before { content: "✓ "; }
+.trust-item { display: inline-flex; align-items: baseline; gap: 0.3rem; }
 
 /* Buttons */
 .btn {
