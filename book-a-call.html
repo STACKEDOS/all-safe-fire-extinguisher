@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact All Safe Fire Extinguisher Co. | Temecula, CA</title>
-  <meta name="description" content="Contact All Safe Fire Extinguisher Co. in Temecula, CA. Email allsafefireextco@gmail.com or call (951) 676-7366. Mon–Fri 7am–5pm. Serving 7 Southern California counties.">
-  <link rel="canonical" href="https://allsafefire.com/contact.html">
+  <title>Book a Service Call | All Safe Fire Extinguisher Co. | Temecula, CA</title>
+  <meta name="description" content="Book a fire extinguisher service call with All Safe Fire Extinguisher Co. Call (951) 676-7366 or submit a request. Serving Southern California since 1981.">
+  <link rel="canonical" href="https://allsafefire.com/book-a-call.html">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
@@ -42,8 +42,8 @@
         <li><a href="about.html">About</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="service-area.html">Service Area</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="book-a-call.html" class="nav-cta">Book a Call</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="book-a-call.html" class="active nav-cta">Book a Call</a></li>
       </ul>
     </nav>
   </div>
@@ -51,31 +51,35 @@
 <main>
   <section class="page-hero">
     <div class="container">
-      <h1>Contact All Safe Fire Extinguisher Co.</h1>
-      <p class="hero-sub">Ready to get compliant? Tell us about your property and we'll route your request to the right specialist.</p>
+      <h1>Book a Service Call &mdash; We'll Handle the Compliance</h1>
+      <p class="hero-sub">Tell us about your property and a specialist will confirm your requirements, quote the service, and get you scheduled. No call centers. No automated responses.</p>
     </div>
   </section>
+
   <section class="section">
     <div class="container contact-layout">
 
       <div class="contact-form-wrap">
-        <h2>Tell Us What You Need Serviced</h2>
+
+        <!-- Direct contact options -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:2rem;">
+          <div style="background:var(--dark);border-radius:.5rem;padding:1.5rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">📞</div>
+            <a href="tel:9516767366" style="font-size:1.35rem;font-weight:700;color:var(--red);display:block;margin-bottom:.35rem;">(951) 676-7366</a>
+            <p style="font-size:.85rem;color:#ccc;margin:0;font-family:Arial,sans-serif;">Call directly during business hours<br><strong style="color:white;">Mon &ndash; Fri, 8:00 AM &ndash; 5:00 PM</strong></p>
+          </div>
+          <div style="background:var(--dark);border-radius:.5rem;padding:1.5rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">✉️</div>
+            <a href="mailto:allsafefireextco@gmail.com" style="font-size:.95rem;font-weight:700;color:var(--red);display:block;margin-bottom:.35rem;word-break:break-all;">allsafefireextco@gmail.com</a>
+            <p style="font-size:.85rem;color:#ccc;margin:0;font-family:Arial,sans-serif;">Email us 24/7 &mdash; we respond<br><strong style="color:white;">within 1 business day</strong></p>
+          </div>
+        </div>
+
+        <h2>Request a Service Call</h2>
         <p>Fill out the form below and a specialist will be in touch. No automated quotes &mdash; we follow up personally within 1 business day.</p>
         <form class="contact-form" action="mailto:allsafefireextco@gmail.com" method="POST" enctype="text/plain">
           <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-          </div>
-          <div class="form-group">
-            <label for="company">Company / Property Name</label>
-            <input type="text" id="company" name="company" placeholder="Company or property name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-          </div>
-          <div class="form-group">
-            <label for="service">Service Needed</label>
+            <label for="service">Service Type</label>
             <select id="service" name="service">
               <option value="">Select a service&hellip;</option>
               <option value="annual-inspection">Annual Inspection</option>
@@ -110,16 +114,47 @@
             </select>
           </div>
           <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Company / Property Name</label>
+            <input type="text" id="company" name="company" placeholder="Company or property name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
             <label for="county">County / City</label>
             <input type="text" id="county" name="county" placeholder="e.g. Riverside County, San Diego, Ventura">
           </div>
           <div class="form-group">
-            <label for="message">Brief Description of Your Needs</label>
+            <label for="message">Notes / Additional Details</label>
             <textarea id="message" name="message" rows="4" placeholder="Describe your property or facility and what you need."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-note">For immediate assistance, call <a href="tel:9516767366">(951) 676-7366</a>.</p>
+          <button type="submit" class="btn btn-primary" style="width:100%;font-size:1.1rem;padding:1rem;">Request a Call Back</button>
+          <p class="form-note">For immediate assistance, call <a href="tel:9516767366">(951) 676-7366</a> during business hours.</p>
         </form>
+
+        <div style="margin-top:2.5rem;">
+          <h3 style="font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--red);margin-bottom:1rem;">What Happens After You Submit</h3>
+          <div class="next-steps">
+            <div class="next-step">
+              <div class="step-num">1</div>
+              <p style="margin:0;">A specialist reviews your request &mdash; usually within 1 business day</p>
+            </div>
+            <div class="next-step">
+              <div class="step-num">2</div>
+              <p style="margin:0;">We confirm your service needs, coverage area, and provide a quote</p>
+            </div>
+            <div class="next-step">
+              <div class="step-num">3</div>
+              <p style="margin:0;">We schedule your service visit or compliance walkthrough at your convenience</p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="contact-sidebar">
@@ -148,25 +183,7 @@
             <strong>Phone:</strong> <span><a href="tel:9516767366">(951) 676-7366</a></span>
           </div>
           <div class="contact-trust-item">
-            <strong>Hours:</strong> <span>Mon &ndash; Fri, 7:00 AM &ndash; 5:00 PM</span>
-          </div>
-        </div>
-
-        <div style="margin-top:2rem;">
-          <h3 style="font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--red);margin-bottom:1rem;">What Happens After You Submit</h3>
-          <div class="next-steps">
-            <div class="next-step">
-              <div class="step-num">1</div>
-              <p style="margin:0;">A specialist reviews your request &mdash; usually within 1 business day</p>
-            </div>
-            <div class="next-step">
-              <div class="step-num">2</div>
-              <p style="margin:0;">We confirm your service needs and coverage area</p>
-            </div>
-            <div class="next-step">
-              <div class="step-num">3</div>
-              <p style="margin:0;">We schedule your service visit or compliance walkthrough</p>
-            </div>
+            <strong>Hours:</strong> <span>Mon &ndash; Fri, 8:00 AM &ndash; 5:00 PM</span>
           </div>
         </div>
       </div>

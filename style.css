@@ -192,8 +192,9 @@ header nav ul { list-style: none; display: flex; gap: 1.5rem; flex-wrap: wrap; a
 header nav a { color: var(--white); font-family: Arial, sans-serif; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
 header nav a:hover { color: var(--red); text-decoration: none; }
 header nav a.active { color: var(--red); }
-header nav a.nav-cta { background: var(--red); color: var(--white); padding: 0.35rem 0.85rem; border-radius: 4px; }
+header nav a.nav-cta { background: var(--red); color: var(--white); padding: 0.35rem 0.85rem; border-radius: 4px; margin-left: 0.5rem; }
 header nav a.nav-cta:hover { opacity: 0.85; color: var(--white); }
+.nav-cta { background: var(--red); color: white !important; padding: .3rem .9rem; border-radius: .25rem; margin-left: .5rem; }
 
 /* Main-nav — flat-link nav (service-area, 404) */
 .main-nav { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
