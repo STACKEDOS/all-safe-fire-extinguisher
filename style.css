@@ -918,3 +918,10 @@ header nav a.nav-cta:hover { opacity: 0.85; color: var(--white); }
 #annual-inspection, #recharging, #hydrostatic, #six-year, #sales, #apartment-installs, #compliance-docs {
   scroll-margin-top: 140px; /* sticky header (~72px) + tab nav (~50px) + buffer */
 }
+
+/* ── Comparison table: needs dark background to match inline white text ── */
+.comparison-table {
+  background: var(--dark);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
