@@ -64,17 +64,15 @@
     </div>
   </section>
 
-  <nav class="services-jump-nav" style="background:var(--dark);padding-left:0;padding-right:0;">
-    <div class="container" style="padding-top:0;padding-bottom:0;">
-      <div class="services-jump-nav">
-        <a href="#annual-inspection" class="jump-pill">Annual Inspection</a>
-        <a href="#recharging" class="jump-pill">Recharging</a>
-        <a href="#hydrostatic" class="jump-pill">Hydrostatic Testing</a>
-        <a href="#six-year" class="jump-pill">6-Year Maintenance</a>
-        <a href="#sales" class="jump-pill">Sales &amp; New Construction</a>
-        <a href="#apartment-installs" class="jump-pill">Apartment Installs</a>
-        <a href="#compliance-docs" class="jump-pill">Compliance Documentation</a>
-      </div>
+  <nav class="service-tab-nav" id="service-tab-nav" aria-label="Jump to service">
+    <div class="service-tab-inner">
+      <a href="#annual-inspection" class="service-tab">Annual Inspection</a>
+      <a href="#recharging" class="service-tab">Recharging &amp; Refilling</a>
+      <a href="#hydrostatic" class="service-tab">Hydrostatic Testing</a>
+      <a href="#six-year" class="service-tab">6-Year Maintenance</a>
+      <a href="#sales" class="service-tab">Sales &amp; New Construction</a>
+      <a href="#apartment-installs" class="service-tab">Apartment Installs</a>
+      <a href="#compliance-docs" class="service-tab">Compliance Documentation</a>
     </div>
   </nav>
 
@@ -257,6 +255,37 @@
   document.querySelector('.nav-toggle').addEventListener('click', function() {
     this.closest('nav').classList.toggle('nav-open');
   });
+</script>
+<script>
+// Service tab active state on scroll
+(function() {
+  const tabs = document.querySelectorAll('.service-tab');
+  const sections = Array.from(tabs).map(t => document.querySelector(t.getAttribute('href')));
+  const nav = document.getElementById('service-tab-nav');
+
+  function setActive() {
+    const scrollY = window.scrollY + 160;
+    let current = sections[0];
+    sections.forEach(s => { if (s && s.offsetTop <= scrollY) current = s; });
+    tabs.forEach(t => {
+      t.classList.toggle('active', t.getAttribute('href') === '#' + current.id);
+    });
+    // Scroll active tab into view within the nav
+    const activeTab = document.querySelector('.service-tab.active');
+    if (activeTab && nav) {
+      const navInner = nav.querySelector('.service-tab-inner');
+      const tabLeft = activeTab.offsetLeft;
+      const tabWidth = activeTab.offsetWidth;
+      const navWidth = nav.offsetWidth;
+      if (tabLeft < nav.scrollLeft || tabLeft + tabWidth > nav.scrollLeft + navWidth) {
+        nav.scrollLeft = tabLeft - navWidth / 2 + tabWidth / 2;
+      }
+    }
+  }
+
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+})();
 </script>
 <!-- PRE-FOOTER CTA STRIP -->
 <div class="prefooter-cta">
