@@ -25,10 +25,23 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
   line-height: 1.2;
 }
-h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
-h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
-h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
+h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1.25rem; }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 1rem; }
+h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); margin-bottom: 0.875rem; }
+h4 { margin-bottom: 0.75rem; }
 p { margin-bottom: 1rem; }
+
+/* Heading → paragraph gap */
+h2 + p, h3 + p, h4 + p { margin-top: 0.75rem; }
+
+/* Mid-section heading clearance (heading that follows body content) */
+p + h2, p + h3, ul + h2, ul + h3 { margin-top: 2rem; }
+
+/* List item breathing room */
+.content li, .service-block li, .who-block li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
 a { color: var(--red); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
@@ -824,8 +837,8 @@ header nav a.nav-cta:hover { opacity: 0.85; color: var(--white); }
   .photo-split img { width: 100%; height: auto; }
 
   /* Section padding */
-  section, .section { padding: 2.5rem 1.25rem; }
-  .service-block { padding: 2rem 1.25rem; }
+  section, .section { padding: 3rem 1.25rem; }
+  .service-block { padding: 2.5rem 1.25rem; }
 
   /* Notable client card */
   .notable-client-card { flex-direction: column; align-items: flex-start; gap: 1rem; }
