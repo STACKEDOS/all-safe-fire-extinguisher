@@ -864,3 +864,8 @@ header nav a.nav-cta:hover { opacity: 0.85; color: var(--white); }
 .section-dark h2, .section-dark h3 { color: #fff; }
 .section-dark p { color: rgba(255,255,255,.82); }
 .why-allsafe-section { background: #222222; color: #fff; }
+
+/* ── SCROLL ANCHOR OFFSET — accounts for sticky header height (~72px) ── */
+#annual-inspection, #recharging, #hydrostatic, #six-year, #sales, #apartment-installs, #compliance-docs {
+  scroll-margin-top: 80px;
+}
